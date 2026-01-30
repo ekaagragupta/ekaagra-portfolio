@@ -1,22 +1,22 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
 
 function Box() {
   return (
-    <mesh rotation={[0.4, 0.2, 0]}>
-      <boxGeometry />
-      <meshStandardMaterial color="hotpink" />
+    <mesh>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="orange" />
     </mesh>
-  );
+  )
 }
 
 export default function App() {
   return (
-    <Canvas camera={{ position: [3, 3, 3] }}>
-      <ambientLight />
+    <Canvas style={{ width: "100vw", height: "100vh" }}>
+      <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} />
       <Box />
       <OrbitControls />
     </Canvas>
-  );
+  )
 }
