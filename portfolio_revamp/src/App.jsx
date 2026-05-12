@@ -4,16 +4,16 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      <motion.h1 
+      <motion.h1
         className="title"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        My Portfolio
+        hey , i am ekaagra Gupta
       </motion.h1>
-      
-      <motion.p 
+
+      <motion.p
         className="subtitle"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
