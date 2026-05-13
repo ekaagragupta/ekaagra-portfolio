@@ -5,6 +5,7 @@ import LetterGlitch from './components/LetterGlitch';
 import LiquidEther from './LiquidEther';
 import DecryptedText from './DecryptedText';
 import StaggeredMenu from './components/StaggeredMenu';
+import GradualBlur from './components/GradualBlur';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '#' },
@@ -53,7 +54,7 @@ function App() {
   return (
     <div className="w-full bg-[#0f172a]">
       {/* STAGGERED MENU COMPONENT (Fixed to top overlay) */}
-      <StaggeredMenu 
+      <StaggeredMenu
         position="right"
         items={menuItems}
         socialItems={socialItems}
@@ -113,7 +114,7 @@ function App() {
       <section id="about" className="relative w-full min-h-screen py-24 bg-[#1e293b] flex flex-col items-center">
         <div style={{ position: 'relative', zIndex: 10, width: '100%', maxWidth: '1200px', padding: '0 2rem' }}>
           <h2 className="title text-center" style={{ fontSize: '3rem', marginBottom: '4rem' }}>About Me</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-[#0f172a] p-8 rounded-2xl shadow-lg border border-[#334155]">
               <p className="text-white text-lg leading-relaxed font-light mb-4">
@@ -123,16 +124,16 @@ function App() {
                 My journey in tech started with curiosity about how machines can think and learn. Today, I'm actively exploring various domains including machine learning algorithms, Artificial Intelligence, web development, and competitive programming. I believe in learning by doing and constantly challenging myself with new projects and technologies.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-[#0f172a] p-6 rounded-2xl border border-[#334155] flex flex-col items-center text-center justify-center transition-transform hover:scale-105">
                 <div className="w-12 h-12 bg-[#5227FF] rounded-full flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                 </div>
                 <h3 className="text-white font-semibold mb-2">Machine Learning</h3>
                 <p className="text-gray-400 text-sm">Deep learning, neural networks, and AI algorithms</p>
               </div>
-              
+
               <div className="bg-[#0f172a] p-6 rounded-2xl border border-[#334155] flex flex-col items-center text-center justify-center transition-transform hover:scale-105">
                 <div className="w-12 h-12 bg-[#FF9FFC] rounded-full flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#0f172a]"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -140,7 +141,7 @@ function App() {
                 <h3 className="text-white font-semibold mb-2">Web Development</h3>
                 <p className="text-gray-400 text-sm">Full-stack development with modern frameworks</p>
               </div>
-              
+
               <div className="bg-[#0f172a] p-6 rounded-2xl border border-[#334155] flex flex-col items-center text-center justify-center transition-transform hover:scale-105">
                 <div className="w-12 h-12 bg-[#B497CF] rounded-full flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#0f172a]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
@@ -148,7 +149,7 @@ function App() {
                 <h3 className="text-white font-semibold mb-2">Data Science</h3>
                 <p className="text-gray-400 text-sm">Data analysis, visualization and predictive models</p>
               </div>
-              
+
               <div className="bg-[#0f172a] p-6 rounded-2xl border border-[#334155] flex flex-col items-center text-center justify-center transition-transform hover:scale-105">
                 <div className="w-12 h-12 bg-[#5227FF] rounded-full flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -160,6 +161,8 @@ function App() {
           </div>
         </div>
       </section>
+
+
 
     </div>
   );
