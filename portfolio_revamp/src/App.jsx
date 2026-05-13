@@ -5,6 +5,7 @@ import LetterGlitch from './components/LetterGlitch';
 import LiquidEther from './LiquidEther';
 import DecryptedText from './DecryptedText';
 import StaggeredMenu from './components/StaggeredMenu';
+import GradualBlur from './components/GradualBlur';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '#' },
@@ -161,7 +162,47 @@ function App() {
         </div>
       </section>
 
+      {/* SECTION 3: PROJECTS WITH GRADUAL BLUR BACKGROUND */}
+      <section id="projects" style={{ position: 'relative', height: '100vh', overflow: 'hidden', backgroundColor: '#0f172a' }}>
+        <div style={{ height: '100%', overflowY: 'auto', padding: '6rem 2rem', paddingBottom: '12rem' }}>
+          <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center">
+            <h2 className="title text-center" style={{ fontSize: '3rem', marginBottom: '4rem' }}>Featured Projects</h2>
 
+            <div className="bg-[#1e293b] w-full p-8 rounded-2xl shadow-xl border border-[#334155] mb-8 relative z-10 transition-transform hover:-translate-y-2">
+              <h3 className="text-white text-3xl font-bold mb-4">Project Alpha</h3>
+              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                A revolutionary approach to data synthesis using advanced AI modeling.
+                This project focuses on bridging the gap between raw data and actionable intelligence.
+              </p>
+              <button className="px-6 py-2 bg-[#5227FF] text-white font-semibold rounded-lg hover:bg-[#FF9FFC] hover:text-[#0f172a] transition-colors">
+                View Project
+              </button>
+            </div>
+
+            <div className="bg-[#1e293b] w-full p-8 rounded-2xl shadow-xl border border-[#334155] mb-8 relative z-10 transition-transform hover:-translate-y-2">
+              <h3 className="text-white text-3xl font-bold mb-4">Project Beta</h3>
+              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                Exploring neural pathways through intuitive UI design. A full-stack application built with React, Node.js, and MongoDB.
+              </p>
+              <button className="px-6 py-2 bg-[#B497CF] text-[#0f172a] font-semibold rounded-lg hover:bg-[#FF9FFC] transition-colors">
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Gradual Blur acting as a stylish background overlay at the bottom */}
+        <GradualBlur
+          target="parent"
+          position="bottom"
+          height="12rem"
+          strength={3}
+          divCount={8}
+          curve="bezier"
+          exponential={true}
+          opacity={1}
+        />
+      </section>
 
     </div>
   );
