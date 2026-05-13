@@ -5,7 +5,6 @@ import LetterGlitch from './components/LetterGlitch';
 import LiquidEther from './LiquidEther';
 import DecryptedText from './DecryptedText';
 import StaggeredMenu from './components/StaggeredMenu';
-import GradualBlur from './components/GradualBlur';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '#' },
