@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import LetterGlitch from './components/LetterGlitch';
 import LiquidEther from './LiquidEther';
-// import LiquidEther from './LiquidEther';
+import DecryptedText from './DecryptedText';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,23 +27,16 @@ function App() {
 
 
         <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <motion.h1
-            className="title"
-            style={{ fontSize: '2.5rem' }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Retrieving intelligence
-          </motion.h1>
 
-          <motion.p
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ duration: 1, repeat: Infinity }}
-            style={{ marginTop: '2rem', color: '#f7f9f8ff' }}
-          >
-            Loading...
-          </motion.p>
+          <DecryptedText
+            text="Hacking into Ekaagra's life"
+            animateOn="view"
+            maxIterations={40}
+            speed={140}
+            parentClassName="title"
+            encryptedClassName="title"
+          />
+
         </div>
 
       </div>
@@ -54,7 +47,7 @@ function App() {
   // If loading is finished, show the Main Portfolio!
   return (
     <div className="relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0f172a]">
-      
+
       {/* BACKGROUND LIQUID ANIMATION */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <LiquidEther
