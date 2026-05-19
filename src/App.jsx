@@ -96,13 +96,6 @@ const projects = [
     copy: "AI/ML internship work building RAG applications, semantic search with vector databases, LLM pipelines, and tool-using agentic workflows connected through REST APIs.",
     stats: ["RAG", "Agents", "APIs"],
   },
-  {
-    title: "GETHER Invention Disclosure",
-    tag: "Environmental Intelligence IP",
-    metric: "05/26",
-    copy: "A laboratory-operational prototype disclosed for Manipal University Jaipur, positioning environmental monitoring as active AI-driven decision support for smart-city and policy systems.",
-    stats: ["Patent", "AQI", "Simulation"],
-  },
 ];
 
 const achievements = [
@@ -548,10 +541,10 @@ function About() {
           <div className="profile-orbit mx-auto mt-2 grid size-52 place-items-center rounded-full border border-cyan-300/18 bg-cyan-300/6">
             <div className="grid size-28 place-items-center rounded-2xl border border-white/12 bg-white/[0.045] text-4xl font-semibold text-white">
               <img
-    src="src/assets/photo.png"
-    alt="profile"
-    className="h-full w-full object-cover rounded-2xl"
-  />
+                src="src/assets/photo.png"
+                alt="profile"
+                className="h-full w-full object-cover rounded-2xl"
+              />
             </div>
           </div>
           <div className="mt-8 space-y-4">
@@ -612,11 +605,7 @@ function About() {
 
 function TechMatrix() {
   return (
-    <Section
-      id="stack"
-      eyebrow="Cybernetic Tech Matrix"
-      title="Tech stack"
-    >
+    <Section id="stack" eyebrow="Cybernetic Tech Matrix" title="Tech stack">
       <div className="gsap-rise panel overflow-hidden p-5 sm:p-7">
         <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
           <div>
@@ -670,11 +659,7 @@ function TechMatrix() {
 
 function Projects() {
   return (
-    <Section
-      id="projects"
-      eyebrow="AI Product Ecosystem"
-      title="Projects"
-    >
+    <Section id="projects" eyebrow="AI Product Ecosystem" title="Projects">
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard key={project.title} project={project} index={index} />
@@ -705,45 +690,6 @@ function ProjectCard({ project, index }) {
         </span>
       </div>
       <p className="mt-5 leading-7 text-slate-400">{project.copy}</p>
-      <div className="project-preview mt-7">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] uppercase tracking-[0.22em] text-slate-500">
-            live preview
-          </span>
-          <span className="size-2 rounded-full bg-emerald-300" />
-        </div>
-        <div className="mt-4 grid grid-cols-[0.8fr_1.2fr] gap-3">
-          <div className="space-y-2">
-            {[0, 1, 2].map((item) => (
-              <span
-                key={item}
-                className="block h-7 rounded-md bg-white/[0.06]"
-              />
-            ))}
-          </div>
-          <svg
-            viewBox="0 0 180 94"
-            className="h-24 w-full overflow-visible"
-            aria-hidden="true"
-          >
-            <path
-              d={`M4 ${68 - index * 4} C 34 12, 62 76, 94 44 S 142 30, 176 ${24 + index * 5}`}
-              fill="none"
-              stroke="#67e8f9"
-              strokeWidth="3"
-              strokeLinecap="round"
-            />
-            <path
-              d={`M4 ${78 - index * 2} C 42 58, 60 18, 100 68 S 145 72, 176 ${40 + index * 3}`}
-              fill="none"
-              stroke="#a78bfa"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeOpacity="0.7"
-            />
-          </svg>
-        </div>
-      </div>
       <div className="mt-6 flex flex-wrap gap-2">
         {project.stats.map((stat) => (
           <span
