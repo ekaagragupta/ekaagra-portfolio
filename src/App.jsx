@@ -24,6 +24,7 @@ import {
   Zap,
 } from "lucide-react";
 import ReactBitsFloatingLines from "./components/FloatingLines";
+import profilePhoto from "./assets/photo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -571,7 +572,7 @@ function About() {
           <div className="profile-orbit mx-auto mt-2 grid size-52 place-items-center rounded-full border border-cyan-300/18 bg-cyan-300/6">
             <div className="grid size-28 place-items-center rounded-2xl border border-white/12 bg-white/[0.045] text-4xl font-semibold text-white">
               <img
-                src="src/assets/photo.png"
+                src={profilePhoto}
                 alt="profile"
                 className="h-full w-full object-cover rounded-2xl"
               />
