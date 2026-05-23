@@ -33,7 +33,7 @@ const navItems = [
   "Stack",
   "Projects",
   "Research",
-  "Experience",
+  "Achievements",
   "Leadership",
   "Signal",
 ];
@@ -130,7 +130,7 @@ const projects = [
   },
 ];
 
-const experience = [
+const achievements = [
   [
     "01",
     "Quantum Computing research intern - Malaviya National Institute of Technology",
