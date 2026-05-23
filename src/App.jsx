@@ -33,7 +33,7 @@ const navItems = [
   "Stack",
   "Projects",
   "Research",
-  "Achievements",
+  "Experience",
   "Leadership",
   "Signal",
 ];
@@ -130,34 +130,24 @@ const projects = [
   },
 ];
 
-const achievements = [
+const experience = [
   [
     "01",
+    "Quantum Computing research intern - Malaviya National Institute of Technology",
+    "Ongoing Research internship",
+  ],
+  [
+    "02",
     "AI/ML Intern at CoreGen",
     "Building LLM-powered RAG applications, semantic search systems, vector database workflows, and agentic AI pipelines.",
   ],
   [
-    "02",
-    "Google Developer Groups Technical Co-Lead",
-    "Leading technical planning and developer workshops across web, cloud, and AI/ML technologies.",
-  ],
-  [
     "03",
-    "DevForge Technical Joint Head",
-    "Overseeing full-stack development with a focus on modular architecture and performance optimization.",
-  ],
-  [
-    "04",
     "GSSoC — Open Source Contributor ",
     "Contributed AI/ML and web features following structured open-source workflows.",
   ],
   [
-    "05",
-    "IEEE CIS — Joint Head, Sponsorship and Curation ",
-    "Led sponsorship acquisition aligned with technical event objectives.",
-  ],
-  [
-    "06",
+    "04",
     "Ministry of Education’s Innovation Cell — Innovation Ambassador ",
     "Supported dissemination of startup and innovation frameworks by Participating in national innovation and entrepreneurship programs.",
   ],
@@ -165,18 +155,18 @@ const achievements = [
 
 const leadershipHighlights = [
   {
-    title: "Community Builder",
-    copy: "Scaled engagement through GDG workshops, member mentorship, and inclusive AI learning sessions.",
+    title: "Google Developer Groups - Tech Co-Lead",
+    copy: "Spearheaded technical strategy, workshop planning, and community engagement for a 5000+ member developer group, organizing 20+ events on web, cloud, and AI/ML technologies.",
     icon: Workflow,
   },
   {
-    title: "Program Lead",
-    copy: "Designed technical tracks, speaker agendas, and collaborative events for developer communities.",
+    title: "DevForge- Technical Joint Head",
+    copy: "Led technical development and architecture for a student-led tech community, overseeing project planning, code quality, and mentorship across web and AI/ML domains.",
     icon: Sparkles,
   },
   {
-    title: "Mentor & Operator",
-    copy: "Guided student teams, coordinated sponsors, and ensured delivery of polished AI projects.",
+    title: "IEEE CIS — Joint Head, Sponsorship and Curation",
+    copy: "Led sponsorship acquisition and event curation for the IEEE Computer Intelligence Society student chapter, securing partnerships aligned with technical event objectives.",
     icon: ShieldCheck,
   },
 ];
