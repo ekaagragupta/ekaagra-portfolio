@@ -13,6 +13,7 @@ import {
   BookUser,
   GitBranch,
   Mail,
+  Megaphone,
   Microscope,
   Network,
   Radar,
@@ -20,6 +21,7 @@ import {
   ShieldCheck,
   Sparkles,
   Terminal,
+  User,
   Workflow,
   Zap,
 } from "lucide-react";
