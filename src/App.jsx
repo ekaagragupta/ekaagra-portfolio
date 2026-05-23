@@ -34,6 +34,7 @@ const navItems = [
   "Projects",
   "Research",
   "Achievements",
+  "Leadership",
   "Signal",
 ];
 
@@ -161,6 +162,25 @@ const achievements = [
     "Supported dissemination of startup and innovation frameworks by Participating in national innovation and entrepreneurship programs.",
   ],
 ];
+
+const leadershipHighlights = [
+  {
+    title: "Community Builder",
+    copy: "Scaled engagement through GDG workshops, member mentorship, and inclusive AI learning sessions.",
+    icon: Workflow,
+  },
+  {
+    title: "Program Lead",
+    copy: "Designed technical tracks, speaker agendas, and collaborative events for developer communities.",
+    icon: Sparkles,
+  },
+  {
+    title: "Mentor & Operator",
+    copy: "Guided student teams, coordinated sponsors, and ensured delivery of polished AI projects.",
+    icon: ShieldCheck,
+  },
+];
+
 const researchNodes = [
   { label: "Large Language Models", value: "0.92" },
   { label: "RAG + Vector Search", value: "0.90" },
@@ -233,6 +253,7 @@ function App() {
       <Projects />
       <Research />
       <Achievements />
+      <Leadership />
       <Contact />
     </motion.main>
   );
@@ -848,6 +869,37 @@ function Achievements() {
             </motion.article>
           ))}
         </div>
+      </div>
+    </Section>
+  );
+}
+
+function Leadership() {
+  return (
+    <Section
+      id="leadership"
+      eyebrow="Command & Crew"
+      title="Leadership in AI communities"
+    >
+      <div className="grid gap-5 lg:grid-cols-3">
+        {leadershipHighlights.map((item) => {
+          const Icon = item.icon;
+          return (
+            <motion.article
+              key={item.title}
+              className="gsap-rise panel p-6 transition duration-500 hover:-translate-y-1 hover:border-cyan-200/24"
+              whileHover={{ y: -6 }}
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/15 bg-cyan-300/8 text-cyan-100">
+                <Icon size={22} />
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-white">
+                {item.title}
+              </h3>
+              <p className="mt-3 leading-7 text-slate-400">{item.copy}</p>
+            </motion.article>
+          );
+        })}
       </div>
     </Section>
   );
