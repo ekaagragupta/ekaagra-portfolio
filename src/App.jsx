@@ -133,7 +133,7 @@ const projects = [
 const achievements = [
   [
     "01",
-    "Quantum Computing research intern - Malaviya National Institute of Technology",
+    "Quantum Computing research intern - NIT jaipur",
     "Ongoing Research internship",
   ],
   [
@@ -168,6 +168,16 @@ const leadershipHighlights = [
     title: "IEEE CIS — Joint Head, Sponsorship and Curation",
     copy: "Led sponsorship acquisition and event curation for the IEEE Computer Intelligence Society student chapter, securing partnerships aligned with technical event objectives.",
     icon: ShieldCheck,
+  },
+  {
+    title: " Teach for India - Deputy Secretary",
+    copy: "Supported the execution of educational initiatives and community outreach programs, contributing to the growth and development of the chapter.",
+    icon: User,
+  },
+  {
+    title: "AI/ML community - Marketing Team Lead",
+    copy: "Led marketing and outreach efforts for the AI/ML community, promoting events, workshops, and initiatives to engage members and attract new talent.",
+    icon: Megaphone,
   },
 ];
 
