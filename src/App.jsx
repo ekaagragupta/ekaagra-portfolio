@@ -57,6 +57,28 @@ const techStack = [
   { name: "OpenCV", type: "Vision + Geospatial", power: 81 },
   { name: "React", type: "AI Dashboards", power: 89 },
 ];
+const achievements = [
+  [
+    "01",
+    "Quantum Computing research intern - NIT jaipur",
+    "Ongoing Research internship",
+  ],
+  [
+    "02",
+    "AI/ML Intern at CoreGen",
+    "Building LLM-powered RAG applications, semantic search systems, vector database workflows, and agentic AI pipelines.",
+  ],
+  [
+    "03",
+    "GSSoC — Open Source Contributor ",
+    "Contributed AI/ML and web features following structured open-source workflows.",
+  ],
+  [
+    "04",
+    "Ministry of Education’s Innovation Cell — Innovation Ambassador ",
+    "Supported dissemination of startup and innovation frameworks by Participating in national innovation and entrepreneurship programs.",
+  ],
+];
 
 const projects = [
   {
@@ -128,29 +150,6 @@ const projects = [
     copy: "AI/ML internship work building RAG applications, semantic search with vector databases, LLM pipelines, and tool-using agentic workflows connected through REST APIs.",
     stats: ["RAG", "Agents", "APIs"],
   },
-];
-
-const achievements = [
-  [
-    "01",
-    "Quantum Computing research intern - NIT jaipur",
-    "Ongoing Research internship",
-  ],
-  [
-    "02",
-    "AI/ML Intern at CoreGen",
-    "Building LLM-powered RAG applications, semantic search systems, vector database workflows, and agentic AI pipelines.",
-  ],
-  [
-    "03",
-    "GSSoC — Open Source Contributor ",
-    "Contributed AI/ML and web features following structured open-source workflows.",
-  ],
-  [
-    "04",
-    "Ministry of Education’s Innovation Cell — Innovation Ambassador ",
-    "Supported dissemination of startup and innovation frameworks by Participating in national innovation and entrepreneurship programs.",
-  ],
 ];
 
 const leadershipHighlights = [
