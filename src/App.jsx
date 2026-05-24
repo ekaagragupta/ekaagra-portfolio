@@ -207,11 +207,12 @@ function App() {
       wheelMultiplier: 0.85,
     });
 
+    let lenisRaf = null;
     const raf = (time) => {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      lenisRaf = requestAnimationFrame(raf);
     };
-    requestAnimationFrame(raf);
+    lenisRaf = requestAnimationFrame(raf);
 
     gsap.utils.toArray(".gsap-rise").forEach((element) => {
       gsap.fromTo(
@@ -232,6 +233,9 @@ function App() {
     });
 
     return () => {
+      if (lenisRaf !== null) {
+        cancelAnimationFrame(lenisRaf);
+      }
       lenis.destroy();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -1048,18 +1052,18 @@ function MainFrameBackground() {
     <div className="main-frame-background" aria-hidden="true">
       <ReactBitsFloatingLines
         enabledWaves={["top", "middle", "bottom"]}
-        lineCount={[10, 15, 20]}
-        lineDistance={[8, 6, 4]}
+        lineCount={[8, 10, 14]}
+        lineDistance={[6, 5, 3]}
         linesGradient={["#67e8f9", "#38bdf8", "#818cf8", "#c084fc"]}
         topWavePosition={{ x: 8.0, y: 0.75, rotate: -0.35 }}
         middleWavePosition={{ x: 4.6, y: 0.02, rotate: 0.18 }}
         bottomWavePosition={{ x: 2.0, y: -0.72, rotate: -1 }}
         animationSpeed={0.62}
-        interactive={true}
+        interactive={false}
         bendRadius={5.0}
         bendStrength={-0.5}
         mouseDamping={0.05}
-        parallax={true}
+        parallax={false}
         parallaxStrength={0.16}
         mixBlendMode="screen"
       />
