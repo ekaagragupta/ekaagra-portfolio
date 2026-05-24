@@ -220,9 +220,9 @@ function App() {
       <Hero />
       <About />
       <TechMatrix />
+      <Achievements />
       <Projects />
       <Research />
-      <Achievements />
       <Leadership />
       <Contact />
     </motion.main>
