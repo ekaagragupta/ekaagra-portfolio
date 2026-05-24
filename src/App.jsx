@@ -25,6 +25,7 @@ import {
   Zap,
 } from "lucide-react";
 import profilePhoto from "./assets/photo.png";
+import FloatingLines from "./components/FloatingLines";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -1013,6 +1014,14 @@ function Section({ id, eyebrow, title, children }) {
 function MainFrameBackground() {
   return (
     <div className="main-frame-background" aria-hidden="true">
+      <FloatingLines
+        linesGradient={["#07b7ff", "#a855f7", "#ec4899"]}
+        enabledWaves={["top", "middle", "bottom"]}
+        lineCount={[8, 10, 6]}
+        lineDistance={[3.2, 4.0, 5.2]}
+        animationSpeed={0.85}
+        parallax={true}
+      />
       <div className="main-frame-vignette" />
     </div>
   );
