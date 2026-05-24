@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -683,15 +683,15 @@ function Projects() {
   return (
     <Section id="projects" eyebrow="AI Product Ecosystem" title="Projects">
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.title} project={project} index={index} />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
         ))}
       </div>
     </Section>
   );
 }
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project }) {
   return (
     <motion.article
       className="gsap-rise project-card group"
@@ -1049,15 +1049,6 @@ function AmbientLines({ density = 18, variant = "default" }) {
         />
       ))}
     </div>
-  );
-}
-
-function ReactiveLight() {
-  return (
-    <div
-      className="pointer-events-none fixed inset-0 z-[60] hidden mix-blend-screen md:block reactive-light"
-      aria-hidden="true"
-    />
   );
 }
 
