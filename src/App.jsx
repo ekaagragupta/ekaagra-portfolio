@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useEffect, useMemo } from "react";
+import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
 import {
   ArrowUpRight,
   Binary,
@@ -25,7 +24,6 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
-import ReactBitsFloatingLines from "./components/FloatingLines";
 import profilePhoto from "./assets/photo.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -191,29 +189,7 @@ const researchNodes = [
 ];
 
 function App() {
-  const cursorX = useMotionValue(0);
-  const cursorY = useMotionValue(0);
-  const smoothX = useSpring(cursorX, { damping: 28, stiffness: 180 });
-  const smoothY = useSpring(cursorY, { damping: 28, stiffness: 180 });
-  const cursorStyle = {
-    "--cursor-x": useTransform(smoothX, (value) => `${value}px`),
-    "--cursor-y": useTransform(smoothY, (value) => `${value}px`),
-  };
-
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 0.075,
-      smoothWheel: true,
-      wheelMultiplier: 0.85,
-    });
-
-    let lenisRaf = null;
-    const raf = (time) => {
-      lenis.raf(time);
-      lenisRaf = requestAnimationFrame(raf);
-    };
-    lenisRaf = requestAnimationFrame(raf);
-
     gsap.utils.toArray(".gsap-rise").forEach((element) => {
       gsap.fromTo(
         element,
@@ -233,24 +209,12 @@ function App() {
     });
 
     return () => {
-      if (lenisRaf !== null) {
-        cancelAnimationFrame(lenisRaf);
-      }
-      lenis.destroy();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-    <motion.main
-      className="min-h-screen overflow-hidden bg-[#030712] text-slate-100 selection:bg-cyan-300 selection:text-slate-950"
-      style={cursorStyle}
-      onMouseMove={(event) => {
-        cursorX.set(event.clientX);
-        cursorY.set(event.clientY);
-      }}
-    >
-      <ReactiveLight />
+    <motion.main className="min-h-screen overflow-hidden bg-[#030712] text-slate-100 selection:bg-cyan-300 selection:text-slate-950">
       <MainFrameBackground />
       <SiteNav />
       <Hero />
@@ -1050,23 +1014,6 @@ function Section({ id, eyebrow, title, children }) {
 function MainFrameBackground() {
   return (
     <div className="main-frame-background" aria-hidden="true">
-      <ReactBitsFloatingLines
-        enabledWaves={["top", "middle", "bottom"]}
-        lineCount={[8, 10, 14]}
-        lineDistance={[6, 5, 3]}
-        linesGradient={["#67e8f9", "#38bdf8", "#818cf8", "#c084fc"]}
-        topWavePosition={{ x: 8.0, y: 0.75, rotate: -0.35 }}
-        middleWavePosition={{ x: 4.6, y: 0.02, rotate: 0.18 }}
-        bottomWavePosition={{ x: 2.0, y: -0.72, rotate: -1 }}
-        animationSpeed={0.62}
-        interactive={false}
-        bendRadius={5.0}
-        bendStrength={-0.5}
-        mouseDamping={0.05}
-        parallax={false}
-        parallaxStrength={0.16}
-        mixBlendMode="screen"
-      />
       <div className="main-frame-vignette" />
     </div>
   );
