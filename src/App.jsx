@@ -59,11 +59,7 @@ const techStack = [
   { name: "React", type: "AI Dashboards", power: 89 },
 ];
 const achievements = [
-  [
-    "01",
-    "Quantum Computing research intern - NIT jaipur",
-    "Ongoing Research internship",
-  ],
+  ["01", "Project intern - NIT jaipur", "Ongoing Research internship"],
   [
     "02",
     "AI/ML Intern at CoreGen",
