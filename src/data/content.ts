@@ -235,7 +235,7 @@ export const PROJECTS: ProjectEntry[] = [
       { label: "Target", value: "Zero False Alarms" },
     ],
     media: {
-      src: "/media/proj-conformal.png",
+      src: "/media/project-1.gif",
       alt: "Evidential Conformal Anticipation video anticipation workflow",
       caption: "Causal spatio-temporal video prediction under environmental distribution shifts",
       aspectRatio: "video",
@@ -257,7 +257,7 @@ export const PROJECTS: ProjectEntry[] = [
       { label: "Abstain Correctness", value: "Monotonic Decay" },
     ],
     media: {
-      src: "/media/care.jpeg",
+      src: "/media/care.gif",
       alt: "CARE RAG Evaluator Calibration Workflow",
       caption: "Platt-scaling reliability curves and confidence-tier abstention matrix",
       aspectRatio: "video",
