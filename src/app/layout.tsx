@@ -18,15 +18,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ekaagra Gupta - AI/ML Researcher & Engineer",
   description:
-    "Portfolio of Ekaagra Gupta - B.Tech CSE (AI & ML) student at Manipal University Jaipur. Builds runtime safety governors for LLM agents, evidential deep learning systems, and high-throughput RAG architectures.",
+    "Portfolio of Ekaagra Gupta - B.Tech (Honors) CSE specialization in Artificial Intelligence and machine learning student at Manipal University Jaipur. Builds runtime safety governors for LLM agents, evidential deep learning systems, and high-throughput RAG architectures.",
   keywords: [
     "Ekaagra Gupta",
     "Edu",
     "AI/ML Researcher",
     "Machine Learning Engineer",
-    "Conformal Prediction",
-    "Evidential Deep Learning",
-    "RAG",
+    "Generative AI",
     "Manipal University Jaipur",
   ],
   authors: [{ name: "Ekaagra Gupta" }],
