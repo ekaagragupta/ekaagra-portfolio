@@ -120,12 +120,12 @@ export function MinimalHero({ onOpenContact, onOpenResume }: MinimalHeroProps) {
             <div ref={copyRef} className="mt-8 sm:mt-10 flex flex-col">
               {/* Research thesis statement */}
               <p className="text-[clamp(1.15rem,2vw,1.5rem)] font-normal text-zinc-200 leading-[1.38] tracking-[-0.02em] max-w-[640px]">
-                &ldquo; AI Engineer &rdquo;
+                &ldquo;  &rdquo;
               </p>
 
               {/* Bio summary */}
               <p className="mt-5 text-[14px] sm:text-[15px] text-zinc-400 leading-[1.7] max-w-[620px]">
-                Undergraduate researcher at Manipal University Jaipur (B.Tech Honors CSE AI/ML)
+                 Undergraduate at Manipal University Jaipur (B.Tech (Honors) Computer Science & Engineering, specialization in Artificial Intelligence and Machine Learning)
               </p>
 
               {/* CTAs with hover physics */}
