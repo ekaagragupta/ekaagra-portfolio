@@ -115,7 +115,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
     role: "AI Research Intern",
     organization: "CSIR - National Institute of Data Science and AI (CSIR-NIDSA)",
     location: "Remote / Research Labs",
-    type: "Computer Vision & Uncertainty",
+    type: "Computer Vision & Deep Learning",
     period: "Oct 2026 – Present",
     status: "Present",
     highlights: [
@@ -126,13 +126,13 @@ export const EXPERIENCES: ExperienceEntry[] = [
     ],
     media: [
       {
-        src: "/media/exp-csir-nidsa-1.gif",
+        src: "/media/csir.jpeg",
         alt: "CSIR-NIDSA Evidential Spatio-Temporal Action Anticipation",
         caption: "Dirichlet-distributed EDL uncertainty quantification on DoTA benchmark",
         aspectRatio: "video",
       },
       {
-        src: "/media/exp-csir-nidsa-1.jpg",
+        src: "/media/csir.jpeg",
         alt: "CSIR-NIDSA Research Artifacts",
         caption: "Test-time adaptation curves and epistemic uncertainty metrics",
         aspectRatio: "video",
@@ -184,7 +184,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
     ],
     media: [
       {
-        src: "/media/exp-ethify-1.jpg",
+        src: "/media/exp-ethify-1.pdf",
         alt: "EthifyAI Hybrid Retrieval Profiling",
         caption: "Memory-aware deployment optimization profiles and throughput audits",
         aspectRatio: "video",
@@ -235,7 +235,7 @@ export const PROJECTS: ProjectEntry[] = [
       { label: "Target", value: "Zero False Alarms" },
     ],
     media: {
-      src: "/media/proj-conformal.gif",
+      src: "/media/proj-conformal.png",
       alt: "Evidential Conformal Anticipation video anticipation workflow",
       caption: "Causal spatio-temporal video prediction under environmental distribution shifts",
       aspectRatio: "video",
@@ -257,7 +257,7 @@ export const PROJECTS: ProjectEntry[] = [
       { label: "Abstain Correctness", value: "Monotonic Decay" },
     ],
     media: {
-      src: "/media/proj-care-rag.gif",
+      src: "/media/care.jpeg",
       alt: "CARE RAG Evaluator Calibration Workflow",
       caption: "Platt-scaling reliability curves and confidence-tier abstention matrix",
       aspectRatio: "video",
