@@ -141,7 +141,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
   },
   {
     id: "mnit-jaipur",
-    role: "AI Intern (Onsite)",
+    role: "AI Intern",
     organization: "Malaviya National Institute of Technology (MNIT) Jaipur",
     location: "Jaipur, India",
     type: "Onsite Internship",
@@ -168,7 +168,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
   },
   {
     id: "ethify-ai",
-    role: "AI Research Intern (Remote)",
+    role: "AI Research Intern",
     organization: "EthifyAI",
     location: "Remote",
     type: "Research & Optimization",
@@ -193,7 +193,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
   },
   {
     id: "coregen",
-    role: "AI/ML Intern (Hybrid)",
+    role: "AI/ML Intern",
     organization: "CoreGen",
     location: "Hybrid",
     type: "Computer Vision & Edge ML",
