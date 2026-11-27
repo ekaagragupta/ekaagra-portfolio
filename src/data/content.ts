@@ -87,8 +87,7 @@ export const ABOUT_CONTENT = {
     "I specialize in bridging statistical machine learning rigor with production-grade engineering. My work focuses on runtime safety governors for tool-using LLMs, Evidential Deep Learning for high-stakes spatio-temporal risk anticipation, and sub-second hybrid retrieval RAG architectures.",
     "From formalizing action reversibility as minimum-cost compensating path searches over tool inverse registries to calibrating abstaining agents under extreme distribution shift, I engineer systems that know precisely when to act, when to hedge, and when to block irreversible execution.",
   ],
-  stats: [
-  ],
+  stats: [] as { label: string; value: string; change: string }[],
   focusAreas: [
     {
       title: "Internships",
