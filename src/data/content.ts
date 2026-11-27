@@ -60,7 +60,7 @@ export interface LeadershipEntry {
 
 export const PERSONAL_INFO = {
   name: "Ekaagra Gupta",
-  nickname: "Edu",
+  nickname: "Eku",
   title: "AI/ML Researcher & Engineer",
   tagline: "Artificial Intelligence, Machine Learning, and Agentic Systems",
   location: "Jaipur, India",
@@ -69,7 +69,7 @@ export const PERSONAL_INFO = {
   availability: "Open to Research Internships & AI Engineering Roles",
   education: {
     institution: "Manipal University Jaipur",
-    degree: "B.Tech in Computer Science with specialization in AI and ML",
+    degree: "B.Tech (Honors) in Computer Science with specialization in AI and ML",
     period: "2024 – 2028",
   },
   links: {
@@ -82,71 +82,35 @@ export const PERSONAL_INFO = {
 
 export const ABOUT_CONTENT = {
   sectionLabel: "01 / ABOUT",
-  headline: "Engineering rigorous safety bounds and high-throughput pipelines for the next generation of autonomous AI systems.",
+  headline: "⟡ ⋆ why code works, not just syntax ⋆ ⟡",
   narrative: [
     "I specialize in bridging statistical machine learning rigor with production-grade engineering. My work focuses on runtime safety governors for tool-using LLMs, Evidential Deep Learning for high-stakes spatio-temporal risk anticipation, and sub-second hybrid retrieval RAG architectures.",
     "From formalizing action reversibility as minimum-cost compensating path searches over tool inverse registries to calibrating abstaining agents under extreme distribution shift, I engineer systems that know precisely when to act, when to hedge, and when to block irreversible execution.",
   ],
   stats: [
-    { label: "Document Chunks Indexed", value: "50,000+", change: "Hybrid RAG at MNIT" },
-    { label: "Recall@15 Improvement", value: "+66.4%", change: "Qwen3 + ColBERT + RRF" },
-    { label: "ECE Calibration Error", value: "0.0042", change: "Platt Scaled from 0.1545" },
-    { label: "Patents Filed", value: "1", change: "IRIS Agent Safety Governor" },
   ],
   focusAreas: [
     {
-      title: "Agentic Safety & Governance",
-      desc: "Sequential conformal risk control, shadow-execution verifiers, and action-reversibility bounds for autonomous agent toolsets.",
+      title: "Internships",
+      desc: "4",
     },
     {
-      title: "Evidential & Conformal ML",
-      desc: "Dirichlet-distributed predictive outputs, spatio-temporal attention, and finite-sample risk guarantees under distribution shift.",
+      title: "Projects",
+      desc: "3",
     },
     {
-      title: "Hybrid Scaled RAG Systems",
-      desc: "Dual-encoder and multi-stage reranking pipelines (BM25 + HNSW + ColBERT) optimized via vLLM and CUDA acceleration.",
+      title: "Research Publications & Patents",
+      desc: "2",
     },
   ],
   photo: {
     src: "/media/profile-about.jpg",
-    alt: "Ekaagra Gupta - Research and Engineering Workspace",
-    caption: "Jaipur, India • AI/ML Research & Agentic Systems",
+    alt: "Ekaagra Gupta ",
+    caption: "Jaipur, India",
   },
 };
 
 export const EXPERIENCES: ExperienceEntry[] = [
-  {
-    id: "iit-dhanbad",
-    role: "AI Intern",
-    organization: "Indian Institute of Technology Dhanbad (IIT Dhanbad)",
-    location: "Dhanbad, India",
-    type: "Research / Systems",
-    period: "Nov 2026 – Present",
-    status: "Present",
-    patentOrCert: {
-      type: "patent",
-      label: "Patent Filed: IRIS Safety Governor",
-    },
-    highlights: [
-      "Invented IRIS, a runtime safety governor for tool-using LLM agents (patent filed), formalizing action reversibility as minimum cost compensating path search over a tool inverse registry with time-decayed undo windows; routed tool calls through a cost-sensitive policy to execute, hold, confirm, or block.",
-      "Designed a sequential conformal risk controller combining Adaptive Conformal Inference, alpha spending, and Conformal Risk Control to bound cumulative expected irreversible harm across multi-step agent trajectories under tool-set distribution shift.",
-      "Engineered a goal-to-effect-envelope compiler and shadow-execution verifier to validate dry run state change vectors (rows mutated, files deleted, funds moved, recipients added) against authorized effect envelopes; integrated taint tracking for prompt injection defense and a hash-chained signed audit log.",
-    ],
-    media: [
-      {
-        src: "/media/proj-iris-agent.gif",
-        alt: "IRIS Runtime Safety Governor Tool Inverse Registry & Conformal Controller",
-        caption: "IRIS: Formalizing reversible action trajectories and shadow verifiers",
-        aspectRatio: "video",
-      },
-      {
-        src: "/media/exp-iit-dhanbad-1.jpg",
-        alt: "IIT Dhanbad AI Research Proof of Work",
-        caption: "Compensating path search and state change verification",
-        aspectRatio: "video",
-      },
-    ],
-  },
   {
     id: "csir-nidsa",
     role: "AI Research Intern",
@@ -163,7 +127,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
     ],
     media: [
       {
-        src: "/media/proj-conformal.gif",
+        src: "/media/exp-csir-nidsa-1.gif",
         alt: "CSIR-NIDSA Evidential Spatio-Temporal Action Anticipation",
         caption: "Dirichlet-distributed EDL uncertainty quantification on DoTA benchmark",
         aspectRatio: "video",
@@ -299,70 +263,25 @@ export const PROJECTS: ProjectEntry[] = [
       caption: "Platt-scaling reliability curves and confidence-tier abstention matrix",
       aspectRatio: "video",
     },
-  },
-  {
-    id: "iris-agent-governor",
-    title: "IRIS: Runtime Safety Governor",
-    subtitle: "Compensating Path Search & Conformal Risk Bounds for Autonomous Agents",
-    description:
-      "A patent-pending runtime safety governor formalizing tool action reversibility as minimum cost compensating path search over a tool inverse registry with time-decayed undo windows. Includes a sequential conformal risk controller, goal-to-effect envelope compiler, dry-run shadow verifier, taint tracking for prompt injection, and hash-chained audit logging.",
-    tags: ["Agentic AI", "Safety Governor", "Patent Pending", "Conformal Prediction", "Provenance Tracking", "Python"],
-    githubUrl: "https://github.com/ekaagragupta/iris-agent-governor", // GITHUB_URL placeholder
-    liveUrl: "https://github.com/ekaagragupta",
-    featured: true,
-    metrics: [
-      { label: "Intellectual Property", value: "Patent Filed" },
-      { label: "Execution Logic", value: "Execute | Hold | Confirm | Block" },
-      { label: "Audit Defense", value: "Hash-Chained Log" },
-    ],
-    media: {
-      src: "/media/proj-iris-agent.gif",
-      alt: "IRIS Runtime Safety Governor Tool Inverse Registry Interface",
-      caption: "Cost-sensitive action routing and dry-run shadow execution verifier",
-      aspectRatio: "video",
-    },
-  },
-  {
-    id: "satellite-super-resolution",
-    title: "Fourier Neural Warping Super-Resolution",
-    subtitle: "Multi-Frame (3+1) Satellite Imagery Reconstruction",
-    description:
-      "Multi-frame optical flow coupled with Fourier-based neural warping to upscale low-resolution 64×64 satellite observations to 256×256 high-fidelity outputs, outperforming standard bicubic and single-frame ESRGAN architectures on fine geographic textures.",
-    tags: ["Computer Vision", "Fourier Neural Warping", "Optical Flow", "Super-Resolution", "PyTorch", "CUDA"],
-    githubUrl: "https://github.com/ekaagragupta", // GITHUB_URL placeholder
-    featured: false,
-    media: {
-      src: "/media/exp-coregen-1.jpg",
-      alt: "Satellite Imagery Super Resolution Artifact",
-      caption: "Reconstructed sub-meter geographic textures from multi-temporal observations",
-      aspectRatio: "video",
-    },
-  },
+  }
 ];
 
 export const RESEARCH_AND_PUBLICATIONS: ResearchEntry[] = [
   {
     category: "Patent",
     title: "GETHER: Generative Emission Temporal Hybrid Explainable Regressor",
-    venueOrAssignee: "Patent Office / Intellectual Property Registry",
+    venueOrAssignee: "Indian Patent Office",
     year: "2026",
-    status: "Filed",
+    status: "Published",
     description: "Novel hybrid explainable regression paradigm combining temporal generative emission models with transparent risk estimators.",
   },
-  {
-    category: "Patent",
-    title: "IRIS: Runtime Action Reversibility & Conformal Risk Controller for Tool-Augmented LLMs",
-    venueOrAssignee: "Patent Office / Intellectual Property Registry",
-    year: "2026",
-    status: "Filed",
-    description: "Formalized graph search over tool-inverse registries, goal-to-effect shadow execution envelopes, and bounded irreversible harm controllers.",
-  },
+
   {
     category: "Peer Review",
     title: "Peer Reviewer — ICGST 2026",
     venueOrAssignee: "Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABV-IIITM Gwalior)",
     year: "2026",
-    status: "Active Reviewer",
+    status: "Reviewer",
     description: "Invited reviewer evaluating contemporary research in machine learning, signal processing, and intelligent autonomous systems.",
   },
 ];
@@ -374,6 +293,13 @@ export const LEADERSHIP: LeadershipEntry[] = [
     period: "2025 – Present",
     summary: "Led 3 extensive technical workshops with over 300 total attendees, expanding GDG campus membership by 20% and mentoring builders in modern cloud architectures.",
     metrics: "300+ Attendees • +20% Growth",
+  },
+    {
+    role: "Facilitator & Rank 12 Leaderboard",
+    organization: "Google Cloud Study Jams",
+    period: "2025",
+    summary: "Facilitated cloud training across 300 students on campus; completed all 24/24 skill badges, achieving Rank 12 nationwide on the program leaderboard.",
+    metrics: "Rank 12 Nationwide • 24/24 Badges",
   },
   {
     role: "Joint Head",
@@ -395,18 +321,11 @@ export const LEADERSHIP: LeadershipEntry[] = [
     period: "2025",
     summary: "Oversaw full-stack development, code reviews, and containerized deployments across 24+ engineering projects.",
     metrics: "24+ Projects Shipped",
-  },
-  {
-    role: "Facilitator & Rank 12 Leaderboard",
-    organization: "Google Cloud Study Jams",
-    period: "2025",
-    summary: "Facilitated cloud training across 300 students on campus; completed all 24/24 skill badges, achieving Rank 12 nationwide on the program leaderboard.",
-    metrics: "Rank 12 Nationwide • 24/24 Badges",
-  },
+  }
 ];
 
 export const TECHNICAL_SKILLS = {
-  languages: ["Python", "C++", "C", "SQL", "TypeScript", "Bash"],
+  languages: ["Python", "C++", "C", "SQL","MATLAB"],
   coreML: [
     "PyTorch",
     "Transformers",
@@ -423,6 +342,9 @@ export const TECHNICAL_SKILLS = {
     "Agentic AI",
     "LangChain",
     "CrewAI",
+    "AutoGPT",
+    "LLaMA",
+    "LangGraph",
     "Hugging Face",
     "vLLM",
     "FAISS",
