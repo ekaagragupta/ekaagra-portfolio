@@ -120,12 +120,12 @@ export function MinimalHero({ onOpenContact, onOpenResume }: MinimalHeroProps) {
             <div ref={copyRef} className="mt-8 sm:mt-10 flex flex-col">
               {/* Research thesis statement */}
               <p className="text-[clamp(1.15rem,2vw,1.5rem)] font-normal text-zinc-200 leading-[1.38] tracking-[-0.02em] max-w-[640px]">
-                &ldquo;Engineering formal runtime safety governors for autonomous LLM agents and uncertainty-calibrated deep learning under distribution shift.&rdquo;
+                &ldquo; AI Engineer &rdquo;
               </p>
 
               {/* Bio summary */}
               <p className="mt-5 text-[14px] sm:text-[15px] text-zinc-400 leading-[1.7] max-w-[620px]">
-                Undergraduate researcher at Manipal University Jaipur (B.Tech CSE AI/ML). Invented IRIS (runtime safety governor for tool-using agents, patent pending at IIT Dhanbad), developing evidential action anticipation at CSIR-NIDSA, and engineered 50k-chunk hybrid RAG at MNIT Jaipur.
+                Undergraduate researcher at Manipal University Jaipur (B.Tech Honors CSE AI/ML)
               </p>
 
               {/* CTAs with hover physics */}

@@ -166,9 +166,9 @@ export default function Hero() {
               {/* INSERT INTERNSHIP/WORK PHOTO HERE -> /public/media/profile-hero.jpg */}
               <MediaSlot
                 src="/media/profile-hero.jpg"
-                alt="Ekaagra Gupta (Edu) - AI/ML Researcher"
+                alt="Ekaagra Gupta - AI/ML Researcher"
                 aspectRatio="portrait"
-                caption="Ekaagra Gupta (Edu) • Researcher & Engineer"
+                caption="Ekaagra Gupta• Researcher & Engineer"
                 priority={true}
                 parallax={true}
                 className="relative z-10"
@@ -177,7 +177,7 @@ export default function Hero() {
               {/* Status pill overlay */}
               <div className="absolute -bottom-3 -left-3 z-20 flex items-center gap-2 rounded-lg border border-white/10 bg-[#0a0a0a]/90 px-3 py-1.5 font-mono text-[11px] text-zinc-300 backdrop-blur-md shadow-xl">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                <span>IIT Dhanbad & CSIR-NIDSA Research</span>
+                <span>CSIR-NIDSA Research</span>
               </div>
             </div>
           </div>
