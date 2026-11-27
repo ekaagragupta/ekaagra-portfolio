@@ -34,11 +34,11 @@ export default function Home() {
           onOpenContact={() => setIsContactOpen(true)}
           onOpenResume={() => setIsResumeOpen(true)}
         />
+        <MinimalExperience />
+        <ActivityGrid />
         <MinimalProjects />
         <MinimalResearch />
-        <MinimalExperience />
         <MinimalActivities />
-        <ActivityGrid />
         <MinimalEducation />
         <MinimalSkills />
         <MinimalContact onOpenContact={() => setIsContactOpen(true)} />

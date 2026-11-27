@@ -23,12 +23,12 @@ export function Navbar({ onOpenContact, onOpenResume }: NavbarProps) {
 
   const navLinks = [
     { label: "ABOUT", href: "#about" },
-    { label: "PROJECTS", href: "#projects" },
-    { label: "RESEARCH", href: "#research" },
     { label: "EXPERIENCE", href: "#experience" },
-    { label: "ACTIVITIES", href: "#activities" },
-    { label: "CADENCE", href: "#activity" },
-    { label: "SKILLS", href: "#skills" },
+    { label: "CONTRIBUTIONS", href: "#activity" },
+    { label: "PROJECTS", href: "#projects" },
+      { label: "SKILLS", href: "#skills" },
+    { label: "RESEARCH", href: "#research" },
+    { label: "LEADERSHIP", href: "#activities" },
     { label: "CONTACT", href: "#contact" },
   ];
 
